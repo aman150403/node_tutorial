@@ -1,10 +1,11 @@
 const express = require('express')
+const app = express()
 
 const db = require('./connection')
 require('dotenv').config()
 const PORT = process.env.PORT || 7500
 
-const app = express()
+// const loggRequest = (req, res, next)
 
 const personRoutes = require('./Routes/personRoutes.js')
 const menuItemRoutes = require('./Routes/menuItemRoutes.js')
