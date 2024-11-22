@@ -26,8 +26,8 @@ router.get('/', async(req, res) => {
         console.log("Data fetched")
         res.status(200).json(persons)
     }catch(error){
-        console.log("Error ata server side : ", error)
-        res.status(500).json({Error : "Error at server side "})
+        console.log("Error at server side : ", error)
+        res.status(500).json({Error : error })
     }
 })
 

@@ -5,7 +5,7 @@ require('dotenv').config()
 const url = process.env.MONGO_URL 
 
 // mongoose.connect(url)
-mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(url)
   .then(() => console.log('Connected to MongoDB Atlas'))
   .catch((err) => console.error('Connection error:', err));
 

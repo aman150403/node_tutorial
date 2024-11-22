@@ -5,7 +5,9 @@ const db = require('./connection')
 require('dotenv').config()
 const PORT = process.env.PORT || 7500
 
-// const loggRequest = (req, res, next)
+// const logRequest = (req, res, next) => {
+
+// }
 
 const personRoutes = require('./Routes/personRoutes.js')
 const menuItemRoutes = require('./Routes/menuItemRoutes.js')
